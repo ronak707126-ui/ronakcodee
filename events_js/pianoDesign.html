@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .piano{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .key{
+            border: 1px solid black;
+           margin: 10px;
+            width: 50px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Piano - Events</h1>
+
+    <div class="piano">
+                    <div class="key" data-note="A">A</div>
+                    <div class="key" data-note="A">B</div>
+                    <div class="key" data-note="A">C</div>
+                    <div class="key" data-note="A">D</div>
+                    <div class="key" data-note="A">E</div>
+                    <div class="key" data-note="A">F</div>
+                    <div class="key" data-note="A">G</div>
+                    <div class="key" data-note="A">H</div>
+
+    </div>
+
+            <audio id="Audio-A" src=""></audio>
+            <audio id="Audio-B" src=""></audio>
+            <audio id="Audio-C" src=""></audio>
+            <audio id="Audio-D" src=""></audio>
+            <audio id="Audio-E" src=""></audio>
+            <audio id="Audio-F" src=""></audio>
+            <audio id="Audio-G" src=""></audio>
+            <audio id="Audio-H" src=""></audio>
+    <script>
+        const key = document.querySelectorAll(".key")
+
+        console.log(key) // keys is the array which is used to store all the div containers
+        key.forEach(function(a){
+            const note = a.getAttribute("data-note")
+
+            const audio = document.getElementById("audio-"+note)
+
+            //Action-click
+            a.addEventLister('click',function(){
+                audio.currentTime = 0;
+                audio.play()
+            })
+
+            //mouse
+            a.addEventLister('mouseover',function(){
+                a.style.backgroundColor="lightblue"
+            })
+
+             a.addEventLister('mouseout',function(){
+                a.style.backgroundColor="white"
+            })
+
+
+        }) // each data on array and do not one task
+    </script>
+</body>
+</html>
