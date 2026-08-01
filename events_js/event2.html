@@ -14,13 +14,13 @@
         overflow: auto;
     }
     .content{
-
+        height: 300px;
     }
 </style>
 <body>
     <h2>Welcome to event </h2>
 
-    <input id="myinput" placeholder=""type Something to search">
+    <input id="myinput" placeholder="type Something to search">
 
     <div id="mydiv">
         <div class="content">Scroll Inside Me</div>
@@ -30,13 +30,14 @@
         const input = document.getElementById("myinput")
         const div = document.getElementById("mydiv")
 
-        // //1. Keyup - when key is released you get Output
+        //1. Keyup - when key is released you get Output
 
         // input.addEventListener('keyup',function(x){
         //      console.log('key released -' + x.key)
         // })
 
-        // //2. keydown - When Key is Pressed you get output
+        //2. keydown - When Key is Pressed you get output
+
         // input.addEventListener('keydown',function(x){
         //      console.log('key pressed -' + x.key)
         // })
@@ -48,7 +49,11 @@
 
         //4. Mouseover - Moving Mouse Over Something
         div.addEventListener('mouseover' , function(){
-            div.style.backgroundColor
+            div.style.backgroundColor = "yellow "
+        })
+
+        div.addEventListener('mouseout' , function(){
+            div.style.backgroundColor = "red"
         })
     </script>
     

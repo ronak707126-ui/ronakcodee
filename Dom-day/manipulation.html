@@ -24,11 +24,13 @@
 
 
     <!-- EXAMPLE - 4 Create Element/Tag Throught JS-->
-    <ul id="xyz">
 
-        <li>Gym</li>
+    <ul id="xyz">  <!--ul - Parent Tag -->
+
+        <li>Gym</li>  <!--li - Child Tag -->
 
     </ul>
+
     <script>
         //Update text Content 
         const button = document.getElementById("btn")
@@ -52,19 +54,29 @@
 
         //container.innerHTML = "<h2>This is Heading Tag Now</h2>"
 
-        //multiplw html tags under backtick 
-        // container.innerHTML = 
-        // <p>This is <mark>Updated</mark>Tag</p>
-        // <img src="" height="100" width="150">
-        // <button>Smiel</button>
+        //multiplw html tags under backtick``
+        container.innerHTML = `
 
+        <p>This is <mark>Updated</mark>Tag</p>
+        <img src="https://images.pexels.com/photos/38443938/pexels-photo-38443938.jpeg" height="100" width="150">
+        <button>Smile</button>
+
+        `
+
+        const para = document.getElementById("abc")
+        //.style.propertyName
+
+        para.style.color = "red"
+        para.style.backgroundColor ="black"
+        para.style.textAlign = "center"
+        para.textContent = "This is Paragraph Tag"
 
         const list = document.getElementById("xyz")
 
                     // document.createElement("TagName")
 
-        const li = Document.createElement("li")
-        li.container = "office"
+        const li = document.createElement("li")
+        li.textContent = "office"
         li.style.color = "red"
 
         //ParentName.appendChild("TagName")
