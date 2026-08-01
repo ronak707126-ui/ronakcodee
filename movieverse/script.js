@@ -336,15 +336,6 @@ document
 
 
 
-// Auto Search First Movie
-
-window.addEventListener("load",()=>{
-
-    searchInput.value="";
-
-    searchBtn.click();
-
-});
 
 
 
