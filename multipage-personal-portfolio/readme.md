@@ -12,9 +12,6 @@ A modern, responsive, and interactive personal portfolio website built using **H
 - 📂 Projects Gallery
 - 📞 Contact Section
 - 🌐 Social Media Links
-- 📱 Fully Responsive Design
-- 🎨 Modern UI with Smooth Animations
-- ⚡ Fast and Lightweight
 
 ---
 
