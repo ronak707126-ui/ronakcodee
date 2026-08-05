@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -51,7 +51,7 @@
             <audio id="audio-G" src="freesound_community-mi-80239 (1).mp3"></audio>
             <audio id="audio-H" src="u_df365hdxp7-cinematic-piano-note-362716.mp3"></audio>
     <script>
-        const keys = document.querySelectorAll(".keys")
+        const keys = document.querySelectorAll(".key")
 
         console.log(keys) // keys is the array which is used to store all the div containers
         keys.forEach( function(e){
@@ -60,17 +60,17 @@
             const audio = document.getElementById("audio-" + note)
 
             //Action-click
-            e.addEventLister('click',function(){
+            e.addEventListener('click',function(){
                 audio.currentTime = 0;
                 audio.play()
             })
 
             //mouse
-            e.addEventLister('mouseover',function(){
+            e.addEventListener('mouseover',function(){
                 e.style.backgroundColor = "lightblue"
             })
 
-             e.addEventLister('mouseout',function(){
+             e.addEventListener('mouseout',function(){
                 e.style.backgroundColor = "white"
             })
 

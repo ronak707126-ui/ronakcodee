@@ -25,12 +25,12 @@
                 console.log(data)
                 
 
-                if(data.Responce == "True"){
+                if(data.Response == "True"){
 
                     console.log(`Title : ${data.Title}`)
                     console.log(`Year : ${data.Year}`)
                     console.log(`Plot: ${data.Plot}`)
-                    console.log(`poster: ${data.Year}`)
+                    console.log(`poster: ${data.Poster}`)
 
                 }else{
 
@@ -39,7 +39,7 @@
                 }
             }catch (error){
                 //Error
-                console.lkog("Error Fetching movie" , error)
+                console.log("Error Fetching movie" , error)
             }
 
 
@@ -50,6 +50,7 @@
         function ExtraTask(){
             console.log("Hello everyone welcome to js")
         }
+        ExtraTask()
     </script>
     
 </body>
