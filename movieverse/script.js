@@ -1,5 +1,5 @@
 
-const OMDB_API_KEY = "";
+const OMDB_API_KEY = " 1cf2cc67";
 
 // Elements
 const searchInput = document.getElementById("searchInput");
